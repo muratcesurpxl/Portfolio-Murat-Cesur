@@ -1,0 +1,234 @@
+/* BASIS INSTELLINGEN */
+:root {
+    --pxl-green: #339c85;
+    --pxl-light-green: #2ecc71;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial,sans-serif;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* NAVIGATIE */
+.navbar {
+    background: var(--pxl-green);
+    position: sticky;
+    top: 0;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+h2 {
+    color: var(--pxl-green);
+    border-bottom: 2px solid var(--pxl-green);
+    padding-bottom: 10px;
+}
+
+footer {
+    display: flex;                   /* Zet alles op één lijn */
+    justify-content: space-between;  /* Verdeelt de ruimte tussen de drie delen */
+    align-items: center;             /* Zorgt dat alles verticaal in het midden staat */
+    padding: 20px 40px;              /* Ruimte binnenin de footer */
+    background-color: #339c85;       /* Je PXL groene kleur */
+    color: white;
+}
+
+.back-to-top {
+    text-decoration: none;           /* Geen onderlijning */
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: white;
+    color: #339c85;
+}
+
+.scroll-up {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.scroll-up:hover {
+    background: white;
+    color: var(--pxl-green);
+}
+.competentie-table .role-header {
+    background-color: #339c85; /* Je PXL groene kleur */
+    color: white;
+}
+
+.competentie-table td:first-child {
+    font-weight: bold;
+    width: 80px; /* Houdt de OLR kolom smal */
+}
+
+
+
+
+
+
+.groene-box {
+    background-color: #e8f5e9; /* Een zachte, professionele lichte groene kleur */
+    border-radius: 15px;       /* Dit maakt de hoeken rond */
+    padding: 25px;             /* Zorgt dat de tekst niet tegen de rand plakt */
+    margin-bottom: 20px;       /* Ruimte onder de box */
+    border: 1px solid #c8e6c9; /* Een heel dun donkerder groen randje voor de netheid */
+    font-family: Arial, sans-serif; /* Zorgt voor een leesbaar lettertype */
+    line-height: 1.6;          /* Iets meer ruimte tussen de regels leest fijner */
+}
+
+/* De container die de boxen naast elkaar zet */
+.x-container {
+    display: flex;              /* Activeert de flexbox modus */
+    justify-content: center;    /* Centreert de boxen in het midden */
+    gap: 20px;                  /* Ruimte tussen de twee boxen */
+    flex-wrap: wrap;            /* Zorgt dat ze op mobiel onder elkaar zakken */
+}
+
+/* Jouw opmaak voor de boxen */
+.x-box {
+    width: 40%;                 /* Ze nemen elk 40% van de breedte in */
+    min-width: 300px;           /* Zorgt dat ze niet te smal worden op mobiel */
+    background-color: #e8f5e9;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #c8e6c9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.x-box h3 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+
+
+.groene-box ul, .groene-box ol {
+    margin-left: 20px;
+}
+
+.groene-box li {
+    margin-bottom: 8px;        /* Ruimte tussen de lijst-items */
+}
+
+.score{
+    width: 8%;
+}
+
+.AIM-reflectie {
+    width: 20%;
+
+}
+
+
+/* CSS voor de 4 vakjes */
+.kwadrant-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Twee kolommen naast elkaar */
+    gap: 15px; /* Ruimte tussen de vakjes */
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.kwadrant-box {
+    /* Alleen een randje om de vakjes, geen grote achtergrond meer */
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.kwadrant-label {
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.kwadrant-inhoud {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Stijl voor de titels van de vragen */
+.vraag-titel {
+    font-weight: bold;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* Algemene tekststijl */
+.reflectie-tekst {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Voor mobiele telefoons: zet de vakjes onder elkaar */
+@media (max-width: 600px) {
+    .kwadrant-grid {
+        grid-template-columns: 1fr;
+    }
+}
